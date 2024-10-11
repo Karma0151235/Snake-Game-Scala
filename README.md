@@ -1,1 +1,8 @@
 # Snake-Game-Scala
+
+
+A fully functional Snake game in Scala using ScalaFX and SceneBuilder, featuring dynamic grid movement, real-time collision detection, score tracking, and increasing difficulty. Designed user-friendly interfaces for multiple screens and optimized game logic by leveraging traits and inheritance to reduce redundancy across controllers.
+
+The game’s logic was implemented using ScalaFX for the graphical user interface (GUI) and JavaFX FXML for scene management, ensuring a clear separation of UI design and backend logic. The core mechanics of the Snake game, such as dynamic grid-based movement, real-time collision detection, and increasing difficulty as the game progresses, were carefully designed to provide a smooth and responsive gameplay experience. The grid movement system allowed the snake to navigate the game space seamlessly, while the collision detection ensured accurate responses to in-game obstacles and boundaries, such as walls and the snake’s own body. As players advanced through the game, the snake’s speed increased, progressively elevating the level of challenge, thus adding an element of excitement and replayability.
+
+To enhance the user interface, SceneBuilder was used to design and lay out multiple screens, including the game’s main interface, tutorial page, and game-over/restart options. The tutorial page provided clear instructions on gameplay mechanics and controls, contributing to a user-friendly experience. Players could easily navigate between different game modes, such as classic and hardcore modes, through simple and intuitive button-based menus.
