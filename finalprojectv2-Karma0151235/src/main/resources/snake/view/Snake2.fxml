@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="457" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.view.Snake2Controller">
+    <Canvas fx:id="gameCanvas" height="386.0" layoutX="-1.0" width="800.0" AnchorPane.leftAnchor="-1.0" AnchorPane.topAnchor="0.0" />
+    <Button fx:id="restartButton" layoutX="122.0" layoutY="407.0" onAction="#restartGame" prefHeight="25.0" prefWidth="63.0" text="Restart" textFill="#ff1212" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="122.0" />
+    <Text fx:id="gameOverText" layoutX="122.0" layoutY="242.0" text="Game Over!" textAlignment="CENTER" visible="false" wrappingWidth="553.1743774414062" AnchorPane.leftAnchor="122.0" AnchorPane.topAnchor="185.54999923706055">
+        <font>
+            <Font name="STHupo" size="50.0" />
+        </font>
+        <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+                <stops>
+                    <Stop color="#d5ffce" />
+                    <Stop color="#d5ffce" offset="0.007662835249042145" />
+                    <Stop color="#62ff4a" offset="0.5101258894362343" />
+                    <Stop color="#d4ffcf" offset="1.0" />
+                </stops>
+            </LinearGradient>
+        </fill></Text>
+    <Text fx:id="scoreText" fill="#ff0404" layoutX="675.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score : 0" textAlignment="CENTER" wrappingWidth="91.898193359375">
+        <font>
+            <Font name="STHupo" size="15.0" />
+        </font>
+    </Text>
+    <Button fx:id="homeButton" layoutX="31.0" layoutY="407.0" mnemonicParsing="false" onAction="#goHome" prefHeight="25.0" prefWidth="63.0" text="Home" textFill="#ff0c0c" />
+</AnchorPane>
